@@ -27,7 +27,9 @@ app.use(
 app.use(bodyParser.json());
 const PORT = process.env.PORT || 3000;
 
-
+app.get('/',(req,res)=>{
+    res.json({status :"BACKEND IS RUNNING"});
+});
 // api's
 app.use("/api/v1/user", userRoute);
 app.use("/api/v1/company", companyRoute);
