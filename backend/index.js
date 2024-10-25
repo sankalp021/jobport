@@ -18,7 +18,7 @@ app.use(cookieParser());
 
 app.use(
     cors({
-        origin :"*",
+        origin :"https://jobport-nine.vercel.app",
         methods : "GET,HEAD,POST,PATCH,POST,DELETE",
         credentials : true,
     })
